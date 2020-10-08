@@ -6,19 +6,19 @@
 // 4. It stores key value pair in sorted order on the basis of key
 // 5. std:: map is generally used in Dictionary type problems.
 #include <iostream>
-#include <map> //include a library of map
+#include "Map.h"
 using namespace std;
 int main(){
     //declare a map using std map
     // in this angular brackets to define key and value data types
-    std::map<string, int> name_map;
+    std::map<int,string> name_map;
 
-    //name_map[1] = 'Tom';   //key1, value : Tom
-    name_map["Alex"] = 1;
-    name_map["Bob"] = 2;
+    
+    name_map[1] = '3';
+    name_map[2] = '4';
    
 
-    std:: cout <<name_map["Bob"] <<std::endl;
+    std:: cout <<name_map[2] <<std::endl;
 
     return 0;
 }
