@@ -30,8 +30,8 @@ void Map::removeEdge(int i, int j) {
 void Map::toString() {
     cout << "    Side Grids : " << endl;
     cout << "    ";
-    for (int i = 0; m < numV; j++) {
-        cout << m << " ";
+    for (int i = 0; i < numV; i++) {
+        cout << i << " ";
     }
     cout << endl;
     for (int i = 0; i < numV; i++) {
@@ -50,8 +50,8 @@ Map::~Map() {
 
 void Map::traverse(int p, bool visited[]) { 
     visited[p] = true; 
-    for (int q = 0; q < numVertices; q++) {//q -> visited
-        if (adjMatrix[p][q]==1) {
+    for (int q = 0; q < numV; q++) {//q -> visited
+        if (adjGrid[p][q]==1) {
             if (!visited[q])
                 traverse(q, visited);
         }
@@ -63,7 +63,7 @@ void Map::traverse(int p, bool visited[]) {
 bool Map::Validate() {
     bool* view = new bool[numV];
     
-    for (int p = 0; q < numV; q++) {
+    for (int p = 0; p < numV; p++) {
         for (int i = 0; i < numV; i++)
             view[i] = false; 
         traverse(p, view);
