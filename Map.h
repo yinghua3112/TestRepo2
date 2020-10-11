@@ -2,7 +2,7 @@
 #include <iostream>
 class Player {};
 
-class Map {
+class Map() {
 private:
     bool** adjGrid;
     int numV;

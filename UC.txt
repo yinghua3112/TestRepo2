@@ -1,0 +1,19 @@
+
+Use Case Templete
+
+Use case name : Start with a verb
+
+Level : “User-level” or “subfunction”
+
+Brief description : summary of the use case
+
+Preconditions : What must be true at the start, and worth telling the reader?
+
+Triggering event : Stimulus
+
+Main flow : A typical, unconditional happy path scenario of success.
+
+Extensions : Alternate scenarios of success or failure.
+
+Postconditions : What must be true on successful completion, and worth telling the reader?
+
